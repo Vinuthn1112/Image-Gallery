@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <style>
+        body {
+          background: url('images/bgimg.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+        #heading
+        {
+            
+            color:blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #SPAN
+        {
+            margin-left: 900px;
+            
+        }    
+    </style>
+    <h2 id="heading" class="my-5 text-center">Online Image Gallery Welcomes You </h2>
+    <div class="container">
+    <form onsubmit="return validate()"  action="mysite_project_explore.php" method="post">
+        <h2 class="text-center">REGISTER NOW</h2>
+        <label class="form-label" for="fname">First Name</label>
+        
+        <input type="text" class="form-control mb-2" id="fname" name="fname">
+        <span id="errorfname" style="color:red" class="mb-3"></span><br>
+        <label class="form-label" for="lname">Last Name</label>
+        <input type="text" class="form-control mb-2" id="lname" name="lname">
+        <span id="errorlname" style="color:red" class="mb-3"></span><br>
+        <label class="form-label" for="email">Username</label>
+        <input type="email" class="form-control mb-2" id="email" name="email">
+        <span id="erroremail" style="color:red" class="mb-3"></span><br>
+        <label class="form-label" for="password">Password</label>
+        <input type="password" class="form-control mb-2" id="password" name="password">
+        <span id="errorpassword" style="color:red" class="mb-3"></span><br>
+        <label class="form-label" for="cpassword">Confirm Password</label>
+        <input type="password" class="form-control mb-3" id="cpassword" name="cpassword">
+        <span id="errorcpassword" style="color:red" class="mb-3"></span><br>
+        <button class="btn btn-primary p-2.8" id="button" class="mb-3">submit</button> 
+        <span id="SPAN"><label><input type="checkbox" id="check" name="check">Remember me</label></span> 
+        <!--<span id="SPAN">already having an account?<a class="" href="mysite_Login.html">login here</a> </span>-->
+    </form>
+    </div>
+    
+    <script src="project_validate.js"></script>
+</body>
+</html>
